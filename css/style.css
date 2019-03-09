@@ -11,6 +11,30 @@ html {
     --monospace: "Lucida Console", Consolas, "Courier", monospace;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+  }
+}
+
 html {
     font-size: 14px;
     background-color: var(--bg-color);
@@ -51,6 +75,23 @@ a:hover {
     text-shadow: none;
     background: var(--select-text-bg-color);
     color: var(--select-text-font-color);
+}
+
+.srcHelp {
+    border: thin #59aef4 solid;
+}
+
+.srcHelpLower {
+    border: thin #59aef4 solid;
+    margin-top: -10px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: smaller sans-serif;
+    padding: 3px;
+    text-align: center;
 }
 
 #write {
@@ -126,6 +167,12 @@ body.typora-export {
 img {
     max-width: 100%;
     vertical-align: middle;
+    padding-top: 15px;
+    padding-bottom: 15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
 }
 
 button,
@@ -428,6 +475,7 @@ li p {
 li {
     margin: 0px;
     position: relative;
+    padding: 5px 0 5px 0px;
 }
 
 blockquote> :last-child {
@@ -797,6 +845,9 @@ video {
     max-width: 100%;
     display: block;
     margin: 0px auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 400px;
 }
 
 iframe {
