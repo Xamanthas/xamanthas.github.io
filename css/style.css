@@ -475,7 +475,7 @@ li p {
 li {
     margin: 0px;
     position: relative;
-    padding: 5px 0 5px 0px;
+    padding: 5px 0 0 0;
 }
 
 blockquote> :last-child {
