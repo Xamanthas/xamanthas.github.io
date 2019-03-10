@@ -77,15 +77,6 @@ a:hover {
     color: var(--select-text-font-color);
 }
 
-.srcHelp {
-    border: thin #59aef4 solid;
-}
-
-.srcHelpLower {
-    border: thin #59aef4 solid;
-    margin-top: -10px;
-}
-
 figcaption {
     background-color: #222;
     color: #fff;
@@ -165,14 +156,14 @@ body.typora-export {
 }
 
 img {
-    max-width: 100%;
+    max-width: 100%
     vertical-align: middle;
     padding-top: 15px;
     padding-bottom: 15px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 400px;
+	width: 50%
 }
 
 button,
@@ -1607,3 +1598,16 @@ footer {
 .footnote-line {
     white-space: normal;
 }
+
+.srcHelpLower,
+.srcHelp {
+    padding-bottom:  0px;
+}
+
+.imggrid{
+    border: thin #59aef4 solid;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+}
+
