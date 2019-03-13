@@ -137,7 +137,7 @@
 <li>Hold on volume decrease button (or chosen Activator method) again to stop the recording.</li>
 <li>Then, there will be a Lua script named with create time in the script list. You can edit, rename or play it back.</li>
 
-<div class="md-diagram-panel"><svg height="250" version="1.1" width="537.453125" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; top: -0.875px; zoom: 0.574934; max-width: 100%; height: auto;" viewBox="0 0 537.453125 249.974">
+<div class="md-diagram-panel"><svg height="250" version="1.1" width="537.453125" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; top: -0.875px; zoom: 0.574934; max-width: 100%; width: 110%; height: auto;" viewBox="0 0 537.453125 249.974">
                     <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.2.0</desc>
                     <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
                         <path stroke-linecap="round" d="M5,0 0,2.5 5,5z" id="raphael-marker-block" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
@@ -206,16 +206,105 @@
 <li>If you press the &quot;Hold&quot; button, it will enter the &quot;Ready to play&quot; status, which every time you quick press the volume down button, the script play back once based on the settings you provided it in the previous modal. </li>
 <li>Hold volume decrease button to forcibly stop the script playback, or quit the &quot;Ready to play&quot; status.</li>
 
-</ol>
-<pre><code class='language-sequence' lang='sequence'>Common state-&gt;Control panel: Hold volume button
-Control panel-&gt;Play settings: Select a script to play
-Play settings-&gt;Ready to play state: Click the &#39;Hold&#39; button
-Ready to play state-&gt;Playing: Press volume button
-Playing--&gt;Ready to play state: Press volume button again
-Play settings-&gt;Playing: Click the &quot;Play&quot; button
-Playing--&gt;Common state: Hold volume button
-</code></pre>
-<p>&nbsp;</p>
+</ol><div class="md-diagram-panel"><svg height="402" version="1.1" width="1087.5390625" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; top: -0.78125px; zoom: 0.284128; max-width: 100%; width:110%; height: auto;" viewBox="0 0 1087.5390625 401.998">
+                    <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.2.0</desc>
+                    <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                        <marker id="raphael-marker-endblock55-objr83c2" markerHeight="5" markerWidth="5" orient="auto" refX="2.5" refY="2.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                            <use xlink:href="#raphael-marker-block" transform="rotate(180 2.5 2.5) scale(1,1)" stroke-width="1.0000" fill="currentColor" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use>
+                        </marker>
+                        <marker id="raphael-marker-endblock55-objrkk7a" markerHeight="5" markerWidth="5" orient="auto" refX="2.5" refY="2.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                            <use xlink:href="#raphael-marker-block" transform="rotate(180 2.5 2.5) scale(1,1)" stroke-width="1.0000" fill="currentColor" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use>
+                        </marker>
+                        <marker id="raphael-marker-endblock55-objwzc04" markerHeight="5" markerWidth="5" orient="auto" refX="2.5" refY="2.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                            <use xlink:href="#raphael-marker-block" transform="rotate(180 2.5 2.5) scale(1,1)" stroke-width="1.0000" fill="currentColor" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use>
+                        </marker>
+                        <marker id="raphael-marker-endblock55-objygucc" markerHeight="5" markerWidth="5" orient="auto" refX="2.5" refY="2.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                            <use xlink:href="#raphael-marker-block" transform="rotate(180 2.5 2.5) scale(1,1)" stroke-width="1.0000" fill="currentColor" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use>
+                        </marker>
+                        <marker id="raphael-marker-endblock55-obj1656q" markerHeight="5" markerWidth="5" orient="auto" refX="2.5" refY="2.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                            <use xlink:href="#raphael-marker-block" transform="rotate(180 2.5 2.5) scale(1,1)" stroke-width="1.0000" fill="currentColor" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use>
+                        </marker>
+                        <marker id="raphael-marker-endblock55-obj0no22" markerHeight="5" markerWidth="5" orient="auto" refX="2.5" refY="2.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                            <use xlink:href="#raphael-marker-block" transform="rotate(180 2.5 2.5) scale(1,1)" stroke-width="1.0000" fill="currentColor" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use>
+                        </marker>
+                        <marker id="raphael-marker-endblock55-objphm7q" markerHeight="5" markerWidth="5" orient="auto" refX="2.5" refY="2.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                            <use xlink:href="#raphael-marker-block" transform="rotate(180 2.5 2.5) scale(1,1)" stroke-width="1.0000" fill="currentColor" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></use>
+                        </marker>
+                    </defs>
+                    <rect x="10" y="20" width="135.21875" height="38" rx="0" ry="0" fill="var(--bg-color)" stroke="currentColor" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
+                    <rect x="20" y="30" width="115.21875" height="18" rx="0" ry="0" fill="none" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="77.609375" y="39" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="currentColor" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: &quot;Andale Mono&quot;, monospace; font-size: 16px;">
+                        <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Common state</tspan>
+                    </text>
+                    <rect x="10" y="344" width="135.21875" height="38" rx="0" ry="0" fill="var(--bg-color)" stroke="currentColor" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
+                    <rect x="20" y="354" width="115.21875" height="18" rx="0" ry="0" fill="none" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="77.609375" y="363" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="currentColor" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: &quot;Andale Mono&quot;, monospace; font-size: 16px;">
+                        <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Common state</tspan>
+                    </text>
+                    <path fill="var(--bg-color)" stroke="currentColor" d="M77.609375,58L77.609375,344" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                    <rect x="198.421875" y="20" width="144.8125" height="38" rx="0" ry="0" fill="var(--bg-color)" stroke="currentColor" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
+                    <rect x="208.40625" y="30" width="124.8125" height="18" rx="0" ry="0" fill="none" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="270.828125" y="39" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="currentColor" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: &quot;Andale Mono&quot;, monospace; font-size: 16px;">
+                        <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Control panel</tspan>
+                    </text>
+                    <rect x="198.421875" y="344" width="144.8125" height="38" rx="0" ry="0" fill="var(--bg-color)" stroke="currentColor" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
+                    <rect x="208.40625" y="354" width="124.8125" height="18" rx="0" ry="0" fill="none" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="270.828125" y="363" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="currentColor" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: &quot;Andale Mono&quot;, monospace; font-size: 16px;">
+                        <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Control panel</tspan>
+                    </text>
+                    <path fill="var(--bg-color)" stroke="currentColor" d="M270.828125,58L270.828125,344" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                    <rect x="439.65625" y="20" width="144.8125" height="38" rx="0" ry="0" fill="var(--bg-color)" stroke="currentColor" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
+                    <rect x="449.640625" y="30" width="124.8125" height="18" rx="0" ry="0" fill="none" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="512.0625" y="39" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="currentColor" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: &quot;Andale Mono&quot;, monospace; font-size: 16px;">
+                        <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Play settings</tspan>
+                    </text>
+                    <rect x="439.65625" y="344" width="144.8125" height="38" rx="0" ry="0" fill="var(--bg-color)" stroke="currentColor" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
+                    <rect x="449.640625" y="354" width="124.8125" height="18" rx="0" ry="0" fill="none" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="512.0625" y="363" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="currentColor" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: &quot;Andale Mono&quot;, monospace; font-size: 16px;">
+                        <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Play settings</tspan>
+                    </text>
+                    <path fill="var(--bg-color)" stroke="currentColor" d="M512.0625,58L512.0625,344" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                    <rect x="652.0859375" y="20" width="202.421875" height="38" rx="0" ry="0" fill="var(--bg-color)" stroke="currentColor" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
+                    <rect x="662.078125" y="30" width="182.421875" height="18" rx="0" ry="0" fill="none" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="753.296875" y="39" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="currentColor" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: &quot;Andale Mono&quot;, monospace; font-size: 16px;">
+                        <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Ready to play state</tspan>
+                    </text>
+                    <rect x="652.0859375" y="344" width="202.421875" height="38" rx="0" ry="0" fill="var(--bg-color)" stroke="currentColor" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
+                    <rect x="662.078125" y="354" width="182.421875" height="18" rx="0" ry="0" fill="none" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="753.296875" y="363" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="currentColor" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: &quot;Andale Mono&quot;, monospace; font-size: 16px;">
+                        <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Ready to play state</tspan>
+                    </text>
+                    <path fill="var(--bg-color)" stroke="currentColor" d="M753.296875,58L753.296875,344" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                    <rect x="969.9296875" y="20" width="87.609375" height="38" rx="0" ry="0" fill="var(--bg-color)" stroke="currentColor" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
+                    <rect x="980.125" y="30" width="67.609375" height="18" rx="0" ry="0" fill="none" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="1013.734375" y="39" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="currentColor" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: &quot;Andale Mono&quot;, monospace; font-size: 16px;">
+                        <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Playing</tspan>
+                    </text>
+                    <rect x="969.9296875" y="344" width="87.609375" height="38" rx="0" ry="0" fill="var(--bg-color)" stroke="currentColor" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect>
+                    <rect x="980.125" y="354" width="67.609375" height="18" rx="0" ry="0" fill="none" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="1013.734375" y="363" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="currentColor" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: &quot;Andale Mono&quot;, monospace; font-size: 16px;">
+                        <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Playing</tspan>
+                    </text>
+                    <path fill="var(--bg-color)" stroke="currentColor" d="M1013.734375,58L1013.734375,344" stroke-width="2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                    <rect x="87.796875" y="74" width="173.21875" height="18" rx="0" ry="0" fill="none" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="174.21875" y="83" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="currentColor" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: &quot;Andale Mono&quot;, monospace; font-size: 16px;">
+                        <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Hold volume button</tspan>
+                    </text>
+                    <path fill="var(--bg-color)" stroke="currentColor" d="M77.609375,96C77.609375,96,235.5292517375201,96,265.8332124591243,96" stroke-width="2" marker-end="url(#raphael-marker-endblock55-objr83c2)" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                    <rect x="281.015625" y="112" width="221.234375" height="18" rx="0" ry="0" fill="none" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="391.4453125" y="121" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="currentColor" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: &quot;Andale Mono&quot;, monospace; font-size: 16px;">
+                        <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Select a script to play</tspan>
+                    </text>
+                    <path fill="var(--bg-color)" stroke="currentColor" d="M270.828125,134C270.828125,134,472.5434526966419,134,507.0655339259744,134" stroke-width="2" marker-end="url(#raphael-marker-endblock55-objrkk7a)" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                    <rect x="522.25" y="150" width="221.234375" height="18" rx="0" ry="0" fill="none" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="632.6796875" y="159" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="currentColor" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: &quot;Andale Mono&quot;, monospace; font-size: 16px;">
+                        <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Click the 'Hold' button</tspan>
+                    </text>
+                    <path fill="var(--bg-color)" stroke="currentColor" d="M512.0625,172C512.0625,172,713.7778276966419,172,748.2999089259744,172" stroke-width="2" marker-end="url(#raphael-marker-endblock55-objwzc04)" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                    <rect x="792.296875" y="188" width="182.828125" height="18" rx="0" ry="0" fill="none" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="883.515625" y="197" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="currentColor" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: &quot;Andale Mono&quot;, monospace; font-size: 16px;">
+                        <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Press volume button</tspan>
+                    </text>
+                    <path fill="var(--bg-color)" stroke="currentColor" d="M753.296875,210C753.296875,210,972.6421448253095,210,1008.7355803385562,210" stroke-width="2" marker-end="url(#raphael-marker-endblock55-objygucc)" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                    <rect x="763.484375" y="226" width="240.4375" height="18" rx="0" ry="0" fill="none" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="883.515625" y="235" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="currentColor" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: &quot;Andale Mono&quot;, monospace; font-size: 16px;">
+                        <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Press volume button again</tspan>
+                    </text>
+                    <path fill="var(--bg-color)" stroke="currentColor" d="M1013.734375,248C1013.734375,248,794.3891051746905,248,758.2956696614438,248" stroke-width="2" marker-end="url(#raphael-marker-endblock55-obj1656q)" stroke-dasharray="6,2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                    <rect x="652.46875" y="264" width="221.234375" height="18" rx="0" ry="0" fill="none" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="762.8984375" y="273" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="currentColor" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: &quot;Andale Mono&quot;, monospace; font-size: 16px;">
+                        <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Click the "Play" button</tspan>
+                    </text>
+                    <path fill="var(--bg-color)" stroke="currentColor" d="M512.0625,286C512.0625,286,956.4364817244932,286,1008.7285371910962,286" stroke-width="2" marker-end="url(#raphael-marker-endblock55-obj0no22)" stroke-dasharray="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                    <rect x="459.25" y="302" width="173.21875" height="18" rx="0" ry="0" fill="none" stroke="none" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></rect><text x="545.671875" y="311" text-anchor="middle" font-family="Andale Mono, monospace" font-size="16px" stroke="none" fill="currentColor" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: &quot;Andale Mono&quot;, monospace; font-size: 16px;">
+                        <tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Hold volume button</tspan>
+                    </text>
+                    <path fill="var(--bg-color)" stroke="currentColor" d="M1013.734375,324C1013.734375,324,156.1104972343892,324,82.61782606843963,324" stroke-width="2" marker-end="url(#raphael-marker-endblock55-objphm7q)" stroke-dasharray="6,2" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path>
+                </svg></div>
 </blockquote>
 <h2 id="playSettings">How do change 'play settings' for scripts?</h2>
 <blockquote><ul>
@@ -253,25 +342,25 @@ Playing--&gt;Common state: Hold volume button
 <div class="row">
     <div class="column">
         <figure>
-            <img src="img\scrHelp1.PNG" class="ImageBorder" alt="Function Help1" referrerpolicy="no-referrer" style="width:100%" onerror="this.style.display = 'none';">
+            <img src="img\scrHelp1.png" class="ImageBorder" alt="Function Help1" referrerpolicy="no-referrer" style="width:100%" onerror="this.style.display = 'none';">
             <figcaption>1 of 4</figcaption>
         </figure>
     </div>
     <div class="column">
         <figure>
-            <img src="img\srcHelp2.PNG" class="ImageBorder" alt="Function Help2" referrerpolicy="no-referrer" style="width:100%" onerror="this.style.display = 'none';">
+            <img src="img\srcHelp2.png" class="ImageBorder" alt="Function Help2" referrerpolicy="no-referrer" style="width:100%" onerror="this.style.display = 'none';">
             <figcaption>2 of 4</figcaption>
         </figure>
     </div>
     <div class="column">
         <figure>
-            <img src="img\srcHelp3.PNG" class="ImageBorder" alt="Function Help3" referrerpolicy="no-referrer" style="width:100%" onerror="this.style.display = 'none';">
+            <img src="img\srcHelp3.png" class="ImageBorder" alt="Function Help3" referrerpolicy="no-referrer" style="width:100%" onerror="this.style.display = 'none';">
             <figcaption>3 of 4</figcaption>
         </figure>
     </div>
     <div class="column">
         <figure>
-            <img src="img\srcHelp4.PNG" class="ImageBorder" alt="Function Help4" referrerpolicy="no-referrer" style="width:100%" onerror="this.style.display = 'none';">
+            <img src="img\srcHelp4.png" class="ImageBorder" alt="Function Help4" referrerpolicy="no-referrer" style="width:100%" onerror="this.style.display = 'none';">
             <figcaption>4 of 4</figcaption>
         </figure>
     </div>
